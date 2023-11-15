@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <section class="bg-blue-700 h-screen flex justify-center items-center">
+        <!-- wrapper  -->
+        <div class="border-2 border-black rounded-md bg-white flex flex-col gap-6 px-2 py-4">
+            <!-- Name fields  -->
+            <div >
+                <label for="First" >First Name:</label>
+                <input type="text" placeholder="First Name" id="First" class="border border-black pl-2" required>
+
+                <label for="Last">Last Name:</label>
+                <input type="text" placeholder="Last Name" id="Last" class="border border-black pl-2" required>
+            </div>
+
+            <!-- DOB and Contry dropdown list  -->
+            <div>
+                <label for="dob">Date Of Birth:</label>
+                <input type="date" id="dob" required>
+                
+                <label class="ml-4" >Country:</label>
+                <select id="Country" class="border border-black pl-2" required >
+                    <option value="India">India</option>
+                    <option value="Nepal">Nepal</option>
+                    <option value="America">America</option>
+                    <option value="Russia">Russia</option>
+                    <option value="China">China</option>
+                    <option value="Japan">Japan</option>
+                    <option value="France">France</option>
+                    <option value="Pakistan">Pakistan</option>
+                </select>
+            </div>
+
+            <!-- gender and profession -->
+            <div class="flex flex-col gap-3">
+                <div>
+                    <label >Gender:</label>
+
+                    <input type="radio" id="Male" name="Gender" required>
+                    <label for="Male">Male</label>
+    
+                    <input type="radio" id="Female" name="Gender" required>
+                    <label for="Female">Female</label>
+    
+                    <input type="radio" id="Others" name="Gender" required>
+                    <label for="Others">Others</label>
+                </div>
+                
+                <div>
+                    <label for="profession">Profession:</label>
+                    <input type="text" placeholder="write your profession" id="profession" class="self-start w-1/2 border border-black pl-2" required>
+                </div>
+                
+            </div>
+
+            <!-- email and mobile number -->
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" placeholder="xyz@gmail.com" id="email" class="border border-black pl-2" required>
+
+                <label for="mobile">Mobile No.:</label>
+                <input type="tel" maxlength="10" id="mobile" placeholder="XXXXXXXXXX" class="border border-black pl-2" required>
+            </div>
+
+            <!-- submit and reset button  -->
+            <div class="flex justify-between">
+                <button class="border-2 border-black bg-green-600 w-[100px] rounded-md">Submit</button>
+                <button class="border-2 border-black bg-red-600 w-[100px] rounded-md"><a href="">Reset</a></button>
+            </div>
+
+
+        </div>
+
+    </section>
+</body>
+</html>
